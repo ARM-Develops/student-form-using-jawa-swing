@@ -15,7 +15,7 @@ public class studentform{
     JTextField t1,t2,t3,t4;
     JTextArea textArea;
     JCheckBox c1,c2,c3,c4;
-    String[] countryList={"Pakistan","India","Australia","England","Sri Lanka","Bangladesh","New Zealand"};
+    String[] countryList={"Pakistan","India","China"};
     JComboBox comboBox=new JComboBox<>(countryList);
     JRadioButton r1,r2;
     JButton b1,b2;
@@ -140,8 +140,8 @@ public class studentform{
             String rollNumber=t2.getText();
             String batch=t3.getText();
             String section=t4.getText();
-//            String gender=buttonGroup1.getSelection().getActionCommand();
-//            String qualification=buttonGroup2.getSelection().getActionCommand();
+            String gender=buttonGroup1.getSelection().getActionCommand();
+            String qualification=buttonGroup2.getSelection().getActionCommand();
             String country=(String)comboBox.getSelectedItem();
             String address=textArea.getText();
             jsonObject.put("Name",name);
