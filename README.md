@@ -22,7 +22,7 @@ public class studentform{
     ButtonGroup buttonGroup1,buttonGroup2;
     JSONObject jsonObject=new JSONObject();
 
-    Lab_11_Task_1()
+    StudentForm()
     {
         frame=new JFrame("Student Registration");
         panel=new JPanel();
